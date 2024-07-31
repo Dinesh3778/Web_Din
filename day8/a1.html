@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="a.css">
+</head>
+<body bgcolor="black">
+    <style>
+        h2{
+            margin: auto;
+            text-align: center;
+            color: white;
+        }
+        h2:hover{
+            text-shadow: 4px 0 0 blue;
+        }
+        a{
+            text-decoration: none;
+            color: yellow;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+            font-size: large;
+            /* position: sticky;
+            top: 0;8/
+            background-color: white;
+            padding-bottom: 25px;
+            height: 7px; */
+        }
+         ul li:hover{
+            color: red;
+            box-shadow: 0 0 10px red;
+            font-size: larger;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+        }
+        .tag{
+            position: relative;
+            text-align: center;
+            color: red;
+            font-size: 50px;
+        }
+        .centre{
+            position:absolute;
+            top: 30%;
+            left: 60%;
+            transform: translate(-50%,-50%);
+            text-shadow: 0 0 10px yellow;
+        }
+        h4{
+            margin-left: 60px;
+            font-size:x-large;
+            color: white;
+            text-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+        }
+        h5{
+            margin-left: 80px;
+            font-size:x-large;
+            color: white;
+            padding-top: 10px;
+        }
+        /* h6{
+           font-size: medium;
+            color: white;
+        }
+        h6:hover{
+            box-shadow: 0 0 9px rgba(231, 9, 9, 0.664);
+            width: 170px;
+            text-align: center;
+            margin-left: 19px;
+        } */
+        h4:hover
+        {
+            text-shadow: 0 0 12px rgb(20, 253, 125);
+            /* font-size: xx-large; */
+            /* width: 170px;
+            text-align: center; */
+        }
+        h5:hover{
+            text-shadow:0 0 10px red
+        }
+        .b{
+            color: white;
+            width: 50px;
+            height: 70px;
+            box-shadow: 0 0 12px yellow;
+            
+        }
+        .fru .apple,.orange,.grapes,.mango{
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 20px;
+            
+        }
+        .z,.y,.x{
+            width: 200px;
+            height: 270px;
+            box-shadow: 0 0 3px yellow;
+            /* margin-bottom: 20px; */
+            color: white;
+            background-color: rgba(128, 128, 128, 0.301);
+            text-align: center;
+            /* padding-top: 14px; */
+            border-radius: 10%;
+        }
+        .x:hover{
+            box-shadow: 0 0 10px red;
+            background-color: rgba(219, 238, 245, 0.658);
+            color: black;
+            font-size: large;
+        }
+        .z:hover{
+            box-shadow: 0 0 10px red;
+            background-color: rgba(219, 238, 245, 0.658);
+            color: black;
+            font-size: large;
+        }
+         .ul li a{
+            color: rgb(228, 81, 13);
+        }
+        .y:hover{
+            font-size: large;
+            box-shadow: 0 0 10px red;
+            background-color: rgba(219, 238, 245, 0.658);
+            color: black;
+        }
+        img{
+            border-radius: 8%;
+            box-shadow: 0 0 9px whitesmoke;
+        }
+        img:hover{
+            box-shadow: 0 0 12px red;
+        }
+        .m{
+            margin-left: 10%;
+        }
+        /* .m:hover{
+            box-shadow: 0 0 10px yellow;
+        } */
+        button{
+            padding: 10px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            
+        }
+        button:hover{
+            box-shadow:0 0 10px rgb(255, 251, 0);
+            color: white;
+            background-color: grey;
+            border-color: rgba(255, 0, 0, 0.745);
+        }
+        .w{
+            color: white;
+            /* width: 150px;
+            height: 40px;
+            box-shadow: 0 0 9px red; */
+            margin-left:5%;
+            display: flex;
+            margin-bottom: 80px;
+            font-size: x-large;
+        }
+        .w {
+            justify-content: space-evenly;
+            
+        }
+    
+        h3:hover{
+            text-shadow: 0 0 12px lightgreen;
+            /* width: 100px;
+            text-align: center;
+            margin-left: 45px; */
+        }
+    </style>
+    <h4 >Updates</h4>
+    <div class="m" id="updates">
+    <span style="color: white;"><h5>Name &nbsp;&nbsp;&nbsp;&nbsp; :  <input type="text"></h5>
+    <h5>Products  :  <input type="text"></h5>
+    <h5>Quantity  :  <input type="text"></h5>
+    <h5>Phone No : <input type="number"></h5>
+    <h5>Bill No &nbsp;&nbsp;&nbsp;&nbsp;: <input type="number"></h5>
+    <h5>Amount&nbsp; : <input type="number"></h5>
+    <button style="margin-left: 15%;">Save</button>
+    </div>
+    <h4 style="margin-left: 90px;">Website</h4>
+    <div class="w" id="website">
+        <p>Instagram &nbsp;:<a href="https://www.instagram.com/">&nbsp;&nbsp;&nbsp;<button>&nbsp;<i class="fa-brands fa-instagram"></i>&nbsp;</button></a></p>
+        <p>Facebook&nbsp;&nbsp;:<a href="https://www.facebook.com/">&nbsp;&nbsp;&nbsp;<button>&nbsp;<i class="fa-brands fa-facebook-f"></i>&nbsp;</button></a></p>
+        <p>Youtube&nbsp;&nbsp;&nbsp;&nbsp;:<a href="https://www.youtube.com/">&nbsp;&nbsp;&nbsp;<button><i class="fa-brands fa-youtube"></i></button></a></p>
+    </div>
+</body>
+</html>

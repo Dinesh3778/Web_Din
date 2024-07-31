@@ -1,0 +1,80 @@
+ @media screen and (max-width:430px)
+{
+    ul{
+        display: flex;
+        text-align: center;
+        /* margin: 20%; */
+        font-size: 1000px;
+        margin-top: 20px;
+        margin-left: -65px;
+    }
+    h2{
+        padding-top: 20px;
+    }
+    li{
+        margin-left: 22px;
+    }
+    h2{
+        margin: auto;
+        text-align: center;
+        color: white;
+    }
+    h4{
+        padding-left: 80px;
+    }
+    .tag{
+        position: relative;
+        text-align: center;
+        color: red;
+        
+       /*  font-size: 10px; */
+    }
+    .centre{
+        position:absolute;
+        top: 10%;
+        left: 60%;
+        transform: translate(-50%,-50%);
+        text-shadow: 0 0 10px yellow;
+    }
+    .tag img{
+        width: 400px;
+    }
+    .centre{
+        font-size: 16px;
+    }
+    .fru .apple,.orange,.grapes,.mango{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 20px;
+        margin-left: 90px;
+    }
+    .z,.y,.x{
+        width: 200px;
+        height: 270px;
+        box-shadow: 0 0 3px yellow;
+        /* margin-bottom: 20px; */
+        color: white;
+        background-color: rgba(128, 128, 128, 0.301);
+        text-align: center;
+        /* padding-top: 14px; */
+        border-radius: 10%;
+        margin-bottom: 20px;
+        margin-left: 1px ;
+    }
+    .w{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .m h5{
+        width: 430px;
+       margin-left: 10.03px;
+    }
+    p{
+        margin-left: 70px;
+    }
+    #oy{
+    padding-left: 40px;
+    }
+} 
