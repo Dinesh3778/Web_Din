@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./a.css">
+    <title>Fruit Shop</title>
+</head>
+<body bgcolor="black">
+    <style>
+        h2{
+            margin: auto;
+            text-align: center;
+            color: white;
+        }
+        h2:hover{
+            text-shadow: 4px 0 0 blue;
+        }
+        a{
+            text-decoration: none;
+            color: yellow;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+            font-size: large;
+            /* position: sticky;
+            top: 0;8/
+            background-color: white;
+            padding-bottom: 25px;
+            height: 7px; */
+        }
+        a:hover{
+            color: white;
+        }
+         ul li:hover{
+           
+            text-shadow: 0  2px 0 red;
+            font-size: 18px;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+        }
+        .tag{
+            position: relative;
+            text-align: center;
+            color: red;
+            font-size: 50px;
+        }
+        .centre{
+            position:absolute;
+            top: 30%;
+            left: 60%;
+            transform: translate(-50%,-50%);
+            text-shadow: 0 0 10px yellow;
+        }
+        h4{
+            margin-left: 60px;
+            font-size:x-large;
+            color: white;
+            text-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+        }
+        h5{
+            margin-left: 80px;
+            font-size:x-large;
+            color: white;
+            padding-top: 10px;
+        }
+        /* h6{
+           font-size: medium;
+            color: white;
+        }
+        h6:hover{
+            box-shadow: 0 0 9px rgba(231, 9, 9, 0.664);
+            width: 170px;
+            text-align: center;
+            margin-left: 19px;
+        } */
+        h4:hover
+        {
+            text-shadow: 0 0 12px rgb(20, 253, 125);
+            /* font-size: xx-large; */
+            /* width: 170px;
+            text-align: center; */
+        }
+        h5:hover{
+            text-shadow:0 0 10px red
+        }
+        .b{
+            color: white;
+            width: 50px;
+            height: 70px;
+            box-shadow: 0 0 12px yellow;
+            
+        }
+        .fru .apple,.orange,.grapes,.mango{
+        display: flex;
+            justify-content: space-evenly;
+            padding-top: 20px;
+            
+        }
+        .z,.y,.x{
+            width: 200px;
+            height: 270px;
+            box-shadow: 0 0 3px yellow;
+            /* margin-bottom: 20px; */
+            color: white;
+            background-color: rgba(128, 128, 128, 0.301);
+            text-align: center;
+            /* padding-top: 14px; */
+            border-radius: 10%;
+        }
+        .x:hover{
+            box-shadow: 0 0 10px red;
+            background-color: rgba(219, 238, 245, 0.658);
+            color: black;
+            font-size: large;
+        }
+        .z:hover{
+            box-shadow: 0 0 10px red;
+            background-color: rgba(219, 238, 245, 0.658);
+            color: black;
+            font-size: large;
+        }
+         .ul li a{
+            color: rgb(228, 81, 13);
+        }
+        .y:hover{
+            font-size: large;
+            box-shadow: 0 0 10px red;
+            background-color: rgba(219, 238, 245, 0.658);
+            color: black;
+        }
+        img{
+            border-radius: 8%;
+            box-shadow: 0 0 9px whitesmoke;
+        }
+        img:hover{
+            box-shadow: 0 0 12px red;
+        }
+        .m{
+            margin-left: 10%;
+        }
+        /* .m:hover{
+            box-shadow: 0 0 10px yellow;
+        } */
+        button{
+            padding: 10px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            
+        }
+        button:hover{
+            box-shadow:0 0 10px rgb(255, 251, 0);
+            color: white;
+            background-color: grey;
+            border-color: rgba(255, 0, 0, 0.745);
+        }
+        .w{
+            color: white;
+            /* width: 150px;
+            height: 40px;
+            box-shadow: 0 0 9px red; */
+            margin-left:5%;
+            display: flex;
+            margin-bottom: 80px;
+            font-size: x-large;
+        }
+        .w {
+            justify-content: space-evenly;
+            
+        }
+    
+        h3:hover{
+            text-shadow: 0 0 12px lightgreen;
+            /* width: 100px;
+            text-align: center;
+            margin-left: 45px; */
+        }
+        .animation{
+    background-color: greenyellow;
+    width: 10rem;
+    height: 10rem;
+    /* padding-left: 80px; */
+    animation: complexanimation 4s ease-in-out infinite;
+    margin: 4rem;
+}
+
+@keyframes complexanimation{
+    0%{
+        transform: translatex(0) rotate(0deg);
+        background-color: greenyellow;
+    }
+
+    25%{
+        transform: translatex(100px) rotate(90deg);
+        background-color: greenyellow;
+    }
+
+    50%{
+        transform: translatex(100px) rotate(180deg);
+        background-color: greenyellow;
+    }
+
+    75%{
+        transform: translatex(0) rotate(270deg);
+        background-color: greenyellow;
+    }
+    100%{
+        transform: translatex(0) rotate(360deg);
+        background-color: greenyellow;
+    }
+
+
+}
+    </style>
+    <h2>Fruity Shop</h2>
+    <ul style="padding-top: 30px ;">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="./a1.html">Updates</a></li>
+        <li><a href="./a1.html">Website</a></li>
+    </ul>
+    <h4 style="padding-bottom: 10px ;">Home page</h4>
+    <div class="tag" id="home">
+        
+        <img src="https://i.pinimg.com/originals/17/f0/5f/17f05fe00ece62503f2995f6e9fc70a7.jpg" width="1290px" style="box-shadow: 0 0 15px white;border-radius: 7%;">
+        <div class="centre" > 
+            Welcome to Our shop... <br> Super Fruity and Tasty Fruits <br> Come to our Shop
+        </div>
+    </div>
+    <h4>Products</h4>
+    <div class="a" id="product"> 
+        <ul class="ul">
+            <li><a href="#apple">Apple</a></li>
+            <li><a href="#orange">Orange</a></li>
+            <li><a href="#grapes">Grapes</a></li>
+            <li><a href="#mango">Mango</a></li>
+        </ul>
+    </div>
+    <div class="fru">
+        <h3 id="oy" style="color: white; margin-left: 120px;">Apple</h3>
+        <div class="apple" id="apple"> 
+            <div class="z"><h3>Gala</h3>
+                <img src="https://hips.hearstapps.com/hmg-prod/images/red-fresh-apple-isolated-on-white-background-royalty-free-image-1627314996.jpg?crop=1.00xw:0.923xh;0,0.0486xh&resize=980:*" 
+                width="160px" height="150px">
+                <h3 style="margin-right: 0%;">Est. 1930s</h3>
+            </div>
+            <div class="y"><h3>McIntosh</h3>
+                <img src="https://hips.hearstapps.com/hmg-prod/images/fresh-apple-royalty-free-image-1627315502.jpg?crop=0.641xw:1.00xh;0.318xw,0&resize=980:*" 
+                width="160px" height="150px">
+                <h3>Est. 1820s</h3>
+            </div>
+            <div class="x"><h3>Gravenstein</h3>
+                <img src="https://hips.hearstapps.com/hmg-prod/images/gravenstein-apples-on-my-tree-royalty-free-image-1627315369.jpg?crop=0.8573xw:1xh;center,top&resize=980:*" 
+                width="160px" height="150px">
+                <h3>Est. 1790s</h3>
+            </div>  
+        </div>    
+        <h3 id="oy" style="color: white; margin-left: 120px;">Orange</h3>
+        <div class="orange" id="orange"> 
+            <div class="z"><h3>Cara Cara Oranges</h3>
+                <img src="https://www.health.com/thmb/aoQLcZy6WNTSBZziK8OKb41lHBg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/CaraCara-1331414930-f09aa301b0234ebaaec5f76b27dbe8f5.jpg" 
+                width="160px"                         height="150px">
+                <h3 style="margin-right: 0%;">Est. 1830s</h3>
+            </div>
+            <div class="y"><h3>Tangerines</h3>
+                <img src="https://www.health.com/thmb/-B2BQimBtVRPJNVCMio0zHepIAU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Tangerine-1078488924-cde03aae33d049f4ad2210340b9b023c.jpg" 
+                width="160px" height="150px">
+                <h3>Est. 1920s</h3>
+            </div>
+            <div class="x"><h3>Clementines</h3>
+                <img src="https://www.health.com/thmb/CqYdrfuJQ7HE_AtBOvWhxHcdnT0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Clementines-1452291999-b5ba0762d2d94c01b5850d67ab2eb474.jpg" 
+                width="160px" height="150px">
+                <h3>Est. 1690s</h3>
+            </div>  
+        </div>   
+        <h3 id="oy" style="color: white; margin-left: 120px;">Grapes</h3>
+        <div class="grapes" id="grapes"> 
+            <div class="z"><h3>Concord</h3>
+                <img src="https://www.foodrepublic.com/img/gallery/15-types-of-grapes-to-know-eat-and-drink/concord-1684769284.webp" 
+                width="160px" height="150px">
+                <h3 style="margin-right: 0%;">Est. 1730s</h3>
+            </div>
+            <div class="y"><h3>Pinot Noir</h3>
+                <img src="https://www.foodrepublic.com/img/gallery/15-types-of-grapes-to-know-eat-and-drink/pinot-noir-1684769284.webp" 
+                width="160px" height="150px">
+                <h3>Est. 1620s</h3>
+            </div>
+            <div class="x"><h3>Crimson Seedless</h3>
+                <img src="https://www.foodrepublic.com/img/gallery/15-types-of-grapes-to-know-eat-and-drink/crimson-seedless-1684769284.webp" 
+                width="160px" height="150px" >
+                <h3>Est. 1890s</h3>
+            </div>  
+        </div>  
+        <h3 id="oy" style="color: white; margin-left: 120px;">Mango</h3>
+        <div class="mango" id="mango"> 
+            <div class="z"><h3>Sindhura</h3>
+                <img src="https://m.media-amazon.com/images/I/51aMSnCQxUL._SX569_.jpg" 
+                width="160px" height="150px">
+                <h3 style="margin-right: 0%;">Est. 1730s</h3>
+            </div>
+            <div class="y"><h3>Banginapalli</h3>
+                <img src="https://m.media-amazon.com/images/I/31cXlUcvRVL._SY300_SX300_QL70_FMwebp_.jpg" 
+                width="160px" height="150px">
+                <h3>Est. 1620s</h3>
+            </div>
+            <div class="x"><h3>Neelam</h3>
+                <img src="https://m.media-amazon.com/images/I/41f98V8BFrL._SX300_SY300_QL70_FMwebp_.jpg" 
+                width="160px" height="150px">
+                <h3>Est. 1890s</h3>
+            </div>  
+        </div>  
+    </div>
+    <div class="animation"></div>
+</body>
+</html>
