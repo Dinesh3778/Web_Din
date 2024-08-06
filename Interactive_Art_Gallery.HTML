@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Art Gallery</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .artwork { display: none; }
+        .active { display: block; }
+        .highlight { background-color: #f0f0f0; cursor: pointer; }
+        .img{ 
+              width: 200px;
+              height: 200px;
+              border-radius: 20px;
+        }
+        .dic{
+            width: 300px;
+            height: auto;
+            background-color: rgba(250, 235, 215, 0.959);
+            padding: 10px;
+            padding-top: 10px;
+            padding-bottom: 1.5pc;
+            border-radius: 30px;
+            box-shadow: 0px 5px 22px rgba(255, 68, 0, 0.699);
+            /* margin-left: 30%; */
+            margin: auto;
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+        .dic:hover{
+            background-color: white;
+        }
+        .dic h1{
+            text-align: center;
+        }
+        .dic h1:hover{
+            text-shadow: 3px 2px 3px red;
+        }
+        button{
+            border: none;
+            background-color: rgb(247, 180, 136);
+            padding: 10px;
+            border-radius: 10px;
+            margin-left: 10px;
+        }
+        button:hover{
+            transform: scale(1.2,1.1);
+            background-color: aliceblue;
+            text-shadow: 1.2px 0.4px 0.2px red;
+        }
+        #nextButton{
+            margin-left: 50%;
+           
+        }
+        .artwork{
+            text-align: center;
+        }
+        .artwork h2:hover{
+            text-shadow: 2px 2px 2px red;
+        }
+    </style>
+</head>
+<body bgcolor="black">
+    <div class="dic">
+    <h1>Interactive Art Gallery</h1>
+   
+    <div id="galleryContainer"></div>
+    <div id="navigation">
+        <button id="prevButton">Previous</button>
+        <button id="nextButton">Next</button>
+    </div>
+    </div>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const galleryContainer = document.getElementById("galleryContainer");
+    const prevButton = document.getElementById("prevButton");
+    const nextButton = document.getElementById("nextButton");
+
+    let currentArtwork = 0;
+    let artworks = [
+        { name: "Starry Night", artist: "Vincent van Gogh", year: 1889, description: "A famous painting by Vincent van Gogh.", image: "https://images.pexels.com/photos/1175136/pexels-photo-1175136.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" },
+        { name: "Gandhi", artist: "Leonardo da Vinci", year: 1873, description: "A portrait of Gandhi, by Leonardo da Vinci.", image: "https://iasgyan.in/ig-uploads/images/GANDHI%E2%80%99S_SATYAGRAHA_IN_SOUTH_AFRICA.jpg" },
+        { name: "The Persistence of Memory", artist: "Salvador Dalí", year: 1931, description: "A surreal painting by Salvador Dalí.", image: "https://uploads6.wikiart.org/images/salvador-dali/the-persistence-of-memory-1931.jpg" },
+     
+    ];
+
+    function renderArtwork(index) {
+        const artwork = artworks[index];
+        galleryContainer.innerHTML = `
+            <div class="artwork active">
+                <img src="${artwork.image}" class="img" alt="${artwork.name}">
+                <h2>${artwork.name}</h2>
+                <p><b>Artist:</b> ${artwork.artist}</p>
+                <p><b>Year:</b> ${artwork.year}</p>
+                <p>${artwork.description}</p>
+            </div>
+        `;
+    }
+
+
+
+    prevButton.addEventListener("click", function() {
+        if (currentArtwork > 0) {
+            currentArtwork--;
+            renderArtwork(currentArtwork);
+        }
+    });
+
+    nextButton.addEventListener("click", function() {
+        if (currentArtwork < artworks.length - 1) {
+            currentArtwork++;
+            renderArtwork(currentArtwork);
+        }
+    });
+
+
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "ArrowRight") {
+            nextButton.click();
+        } else if (event.key === "ArrowLeft") {
+            prevButton.click();
+        }
+    });
+
+    renderArtwork(currentArtwork);
+});
+</script>
+</html>
