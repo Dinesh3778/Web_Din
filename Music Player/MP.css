@@ -1,0 +1,159 @@
+a{
+    text-decoration: none;
+}
+.nav-item a:hover{
+    text-decoration: underline white;
+    color: orangered;
+    text-shadow: 0 1px 0 red;
+}
+.container-fluid a{
+    padding-left: 20px;
+}
+.navbar-brand:hover{
+    text-shadow:0 3px 0 red;
+    text-decoration: underline white
+}
+.card-body:hover{
+    background-color: rgba(255, 255, 255, 0.612);
+    height: 50px;
+}
+#ih h2,#ph h2{
+    color: #f3f2ef;
+    padding-top: 40px;
+    text-align: center;
+}
+#mh h2{
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+}
+.q2,.q1{
+    display: flex;
+    flex-direction: column;
+}
+.q2 img:hover{
+    box-shadow: 0 0 22px whitesmoke;
+    border-radius: 20px;
+   
+}
+.q1 img:hover{
+    box-shadow: 0 0 22px whitesmoke;
+    border-radius: 20px;   
+}
+.q button{
+    border: none;
+}
+.q button:hover{
+    font-size: 18px;
+    width: 160px;
+    margin-left: 25px;
+    box-shadow: 0 3px 0 red;
+    background-color: antiquewhite;
+}
+
+.q{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.q img{
+    height: 230px;
+    width: 13rem;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.carousel-inner img{
+    border-radius: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.oi{
+    color: white;
+    margin-top: 50px;
+    margin-left: -29px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#a{
+    margin-left: 40px;
+    color: rgba(255, 255, 255, 0.623);
+}
+h2:hover{
+    text-shadow: 0 2px 0 yellow;
+}
+#a:hover{
+    color: rgb(255, 187, 0);
+    text-decoration: underline white;
+}
+.lp button 
+{
+    border: none;
+    font-size: 24px;
+    background-color: black;
+}
+
+@media screen and (max-width: 430px)
+{
+    #ih h2,#mh h2,#ph h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    .q{
+        display: flex;
+        flex-direction: column;
+    }
+    .q1 button, .q2 button{
+        width: 100px;
+        margin-top: 20px;
+        margin-left: 39%;
+    }
+    .q1 img, .q2 img{
+        width: 300px;
+        height: 300px;
+    }
+    .oi{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .oii{
+        padding-top: 10px;
+        font-size: 40px;
+    }
+    .oii h2{
+        width: 180px;
+        text-align: center;
+        margin-left: 35%;
+    }
+    #a{
+        margin-left: 20%;
+        
+    }
+    .lp{
+        display: flex;
+        padding-top: 40px;
+        margin-left: 180px;
+        
+    }
+    .oii h2{
+        background:linear-gradient(orange,orangered,yellow);
+       margin-bottom: 15px;
+    }
+    #divn{
+        margin-right: 190px;
+    }
+    .carousel-inner img{
+        width: 300px;
+        height: 350px;
+    }
+    .q1 button:hover, .q2 button:hover{
+        margin-left: 39%;
+        padding-left: 1px;
+        padding-right: 1px;
+        width: 100px;
+    }
+    
+}
